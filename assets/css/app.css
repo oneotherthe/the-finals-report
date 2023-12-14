@@ -1,0 +1,61 @@
+* {
+  color: #f1f2f4;
+  font-family: "Saira", Arial;
+}
+
+html,
+body {
+  background-color: #d21f3c;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url(../images/background-logo.png?v=001);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.the-shadow {
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
+}
+
+.the-lesser-shadow {
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+}
+
+.fix-align {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.fix-align.first {
+  justify-content: center;
+}
+
+.fix-align.second {
+  justify-content: left;
+}
+
+.fix-align.second h1 {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .fix-align.second {
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .fix-align.first img {
+    max-width: 275px;
+  }
+}
